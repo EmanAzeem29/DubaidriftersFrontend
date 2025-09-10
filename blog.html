@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f5] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#111618]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-[#111618] text-lg font-bold leading-tight tracking-[-0.015em]">Dubaidrifters.com</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#111618] text-sm font-medium leading-normal" href="#">Tours</a>
+              <a class="text-[#111618] text-sm font-medium leading-normal" href="#">Experiences</a>
+              <a class="text-[#111618] text-sm font-medium leading-normal" href="#">Blog</a>
+              <a class="text-[#111618] text-sm font-medium leading-normal" href="#">Contact</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0b95da] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Book Now</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#111618] tracking-light text-[32px] font-bold leading-tight">Blog</p>
+                <p class="text-[#607c8a] text-sm font-normal leading-normal">Explore our latest articles on travel tips, destination guides, and more.</p>
+              </div>
+            </div>
+            <div class="px-4 py-3">
+              <label class="flex flex-col min-w-40 h-12 w-full">
+                <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                  <div
+                    class="text-[#607c8a] flex border-none bg-[#f0f3f5] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                    data-icon="MagnifyingGlass"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                    placeholder="Search articles"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-0 border-none bg-[#f0f3f5] focus:border-none h-full placeholder:text-[#607c8a] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                    value=""
+                  />
+                </div>
+              </label>
+            </div>
+            <div class="flex gap-3 p-3 flex-wrap pr-4">
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f3f5] pl-4 pr-4">
+                <p class="text-[#111618] text-sm font-medium leading-normal">All</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f3f5] pl-4 pr-4">
+                <p class="text-[#111618] text-sm font-medium leading-normal">Travel Tips</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f3f5] pl-4 pr-4">
+                <p class="text-[#111618] text-sm font-medium leading-normal">Destination Guides</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f3f5] pl-4 pr-4">
+                <p class="text-[#111618] text-sm font-medium leading-normal">Experiences</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f3f5] pl-4 pr-4">
+                <p class="text-[#111618] text-sm font-medium leading-normal">News</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKh0fzYIqp2syhOGBrm4UJC2r78kvvqt-LRwiZjigjQXeUFEHDfqKQ_9Vajf7g5fvb3-nncSLxZHOYfdpOPlKckjNLH7Yey4C2QV8n-etEhpLltRv15oU399azrs5BEDKV-YNNVMPP5gtCUCzhZT5XTHW7n2xuq5RLO2qsJuWh8EBTLFQ0UdJjrHGjX8thqU98mxCyYeJQAH4H-Z8okHxNMCbVU5BiSwFTGAnbwgag9W7UnLPI49j6OKgmXEirqi9doJdJdRv8Hci3");'
+                ></div>
+                <div>
+                  <p class="text-[#111618] text-base font-medium leading-normal">Top 5 Must-See Attractions in Dubai</p>
+                  <p class="text-[#607c8a] text-sm font-normal leading-normal">Discover the iconic landmarks and hidden gems that make Dubai a must-visit destination.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC42R8hMJTXFIMbrK5AP0rbYw9xQj79wYZZi1Fhlp8Dx55tdQvZjEn7YOSY5BYsxeew-4GFBAoPl8kBv-ouIkE19_lOi2DZpMrJZ4PSVLxdq8qni1g-Zkr58Lra8GpMKizUkZeslPI5_hmzMinTJC28ifk0rw-hb6ziV8FozjTBQOWefdBmajKC0a7P0Mi-AyFKPaYB6sEOqk-fIBBwHtOXhT8sR7ubWP1YOWXUMpwCvYtIY5r-wjpr2HeUHUWjutbud5W5f9v03mf8");'
+                ></div>
+                <div>
+                  <p class="text-[#111618] text-base font-medium leading-normal">A Day in the Life: Experiencing the Desert Safari</p>
+                  <p class="text-[#607c8a] text-sm font-normal leading-normal">
+                    Join us on an unforgettable desert safari adventure, filled with thrilling activities and cultural experiences.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSfqNNhjaa-ZqS3yQRHyq8BjXfTNjnG-PC33UdLtVfN7gAzEpi7ANPbSdM2eomz8Xfc7avsMdN7ZBNtsc2QtSdjScPVQP2SRTGkl2fLlAHyNpYGnZK2eSSo2PUoApB6sXXyWb-bOczz7g5pla-uHEgvTSQmA8OvgA2A3vi751TssBzgwC-D_BeVtU69h4AkK51AaqoUAsNSRRcJIEzklWdCDGFUMRw5qS8-Gqvk48UGr1UmFgr_F9q4h1IjOOnJbkFAi2r7vIJk4bT");'
+                ></div>
+                <div>
+                  <p class="text-[#111618] text-base font-medium leading-normal">Hidden Gems: Off the Beaten Path in Dubai</p>
+                  <p class="text-[#607c8a] text-sm font-normal leading-normal">Explore the lesser-known corners of Dubai, where you'll find unique experiences and local charm.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYXYJ6P-pkI0wCXq_9r_A5qMlzgWylto1FrYjIWF9RfS-Un-pU5d0-t1AZJ_7mj_bVaRFOFDD9gsdO7EDqRCgLeemniY48qbLFmOJBLiYc_FM3lBTTVgnAc1HYz5G5eycHfw79guYUfW1fwpgB49M6QQUfsmEn57J2BLB4l8NVxkg_BKqenDze3u6VfiOQgKvE-LGDGWcsZsLzbUyDxLQ4cPddnQs-rmRSK9gVMDfBwrxQFbNNMoRa5lI2r_dXB2Kppv-SRLYt4Cgx");'
+                ></div>
+                <div>
+                  <p class="text-[#111618] text-base font-medium leading-normal">Best Time to Visit Dubai: A Seasonal Guide</p>
+                  <p class="text-[#607c8a] text-sm font-normal leading-normal">
+                    Plan your trip to Dubai with our seasonal guide, highlighting the best times to visit for different activities.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHh_2S2BGYgQDI4wCJNmXl0aR1uCJr8t-hU4-FPbQFtTadBpWZvHzpKpD80yvqFqtvx4GJDhQC3P6qqCyxD-vM7cAHNBchqtSH_80381hFAOZe-1B35WNPIu3tWBo4HKbeOyeTi5MddZSWuiA_rAjk2yYQuC3MErovCXhmsIb5ZA1BUZ11GAV68OIT1MsH94Ld9ksX1lKVuH3qyawkd5MHtTbL93CwA8KKgv-ufnI47ZJqptR9ZHCD1E70HbStluapmpZum3Sbp0r8");'
+                ></div>
+                <div>
+                  <p class="text-[#111618] text-base font-medium leading-normal">Luxury Travel on a Budget: Tips for Dubai</p>
+                  <p class="text-[#607c8a] text-sm font-normal leading-normal">
+                    Experience the luxury of Dubai without breaking the bank, with our expert tips for budget-conscious travelers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#607c8a] text-base font-normal leading-normal min-w-40" href="#">About Us</a>
+                <a class="text-[#607c8a] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
+                <a class="text-[#607c8a] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#607c8a] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              </div>
+              <p class="text-[#607c8a] text-base font-normal leading-normal">@2024 Dubaidrifters.com. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

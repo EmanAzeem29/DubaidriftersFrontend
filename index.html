@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dubaidrifters.com</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#FDF6EC] font-sans">
+<header class="bg-gradient-to-r from-black via-[#1a1a1a] to-[#0d0d0d] shadow-lg sticky top-0 z-50 transition-all duration-300 ease-in-out">
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between items-center py-2 animate-fadeDown">
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <img src="logo.jpg" alt="Dubai Drifters Logo" 
+             class="h-16 w-16 rounded-full object-cover border-4 border-[#C89B52] shadow-lg hover:scale-110 transition-transform duration-300"/>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6 text-sm text-white font-medium">
+        <a class="hover:text-[#C89B52] transition-colors duration-300 hover:scale-105" href="about.html">About Us</a>
+        <a class="hover:text-[#C89B52] transition-colors duration-300 hover:scale-105" href="contact.html">Contact Us</a>
+        <a class="hover:text-[#C89B52] transition-colors duration-300 hover:scale-105" href="blog.html">Blog</a>
+
+        <!-- Currency Dropdown -->
+        <div class="relative group">
+          <button id="currencyBtn" class="flex items-center hover:text-[#C89B52] transition duration-300">
+            <span id="currencyText">USD</span>
+            <span class="material-icons text-sm">expand_more</span>
+          </button>
+          <ul id="currencyDropdown" class="absolute right-0 mt-2 w-28 bg-[#1a1a1a] border border-[#C89B52] shadow-md rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transform scale-y-0 group-hover:scale-y-100 origin-top transition-all duration-300 text-white">
+            <li class="px-4 py-2 hover:bg-[#C89B52] cursor-pointer">USD</li>
+            <li class="px-4 py-2 hover:bg-[#C89B52] cursor-pointer">AED</li>
+            <li class="px-4 py-2 hover:bg-[#C89B52] cursor-pointer">EUR</li>
+            <li class="px-4 py-2 hover:bg-[#C89B52] cursor-pointer">GBP</li>
+          </ul>
+        </div>
+
+        <!-- Language Dropdown -->
+        <div class="relative group">
+          <button id="languageBtn" class="flex items-center hover:text-[#C89B52] transition duration-300">
+            <img alt="USA Flag" class="h-4 w-6 mr-2 rounded-sm shadow" src="https://flagcdn.com/w20/us.png"/>
+            <span id="langText">English</span>
+            <span class="material-icons text-sm">expand_more</span>
+          </button>
+          <ul id="languageDropdown" class="absolute right-0 mt-2 w-32 bg-[#1a1a1a] border border-[#C89B52] shadow-md rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transform scale-y-0 group-hover:scale-y-100 origin-top transition-all duration-300 text-white">
+            <li class="px-4 py-2 hover:bg-[#C89B52] cursor-pointer">English</li>
+            <li class="px-4 py-2 hover:bg-[#C89B52] cursor-pointer">Arabic</li>
+            <li class="px-4 py-2 hover:bg-[#C89B52] cursor-pointer">French</li>
+            <li class="px-4 py-2 hover:bg-[#C89B52] cursor-pointer">Chinese</li>
+          </ul>
+        </div>
+
+        <a class="flex items-center hover:text-[#C89B52] transition duration-300 hover:scale-105" href="#">
+          <span class="material-icons text-lg mr-1">person</span>
+          <span>Sign In</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <button class="text-white hover:text-[#C89B52] transition duration-300">
+          <span class="material-icons">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <hr class="opacity-20 border-[#C89B52]"/>
+
+    <!-- Nav Links -->
+    <nav class="hidden md:flex justify-center items-center py-3 space-x-8 text-sm font-semibold text-white animate-fadeUp">
+      <a class="hover:text-[#C89B52] transition duration-300 hover:scale-105" href="tours.html">TOURS</a>
+      <a class="hover:text-[#C89B52] transition duration-300 hover:scale-105" href="#">ACTIVITIES</a>
+      <a class="hover:text-[#C89B52] transition duration-300 hover:scale-105" href="#">HOLIDAY PACKAGES</a>
+      <a class="hover:text-[#C89B52] transition duration-300 hover:scale-105" href="visa.html">VISA</a>
+      <a class="hover:text-[#C89B52] transition duration-300 hover:scale-105" href="#">TRANSPORTATION</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Tailwind Custom Animations -->
+<style>
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeDown { animation: fadeDown 0.6s ease-out; }
+.animate-fadeUp { animation: fadeUp 0.6s ease-out 0.2s; }
+</style>
+
+
+<main>
+<section class="relative h-[600px] bg-cover bg-center" style="background-image: url('img1.jpg');">
+<div class="absolute inset-0 bg-black bg-opacity-40"></div>
+<div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+<h1 class="text-4xl md:text-6xl font-bold mb-4">Explore the Best of Dubai</h1>
+<p class="text-lg md:text-xl mb-8">Your ultimate guide to an unforgettable experience.</p>
+<div class="w-full max-w-4xl bg-white rounded-lg p-4 shadow-lg">
+<div class="flex flex-col md:flex-row items-center">
+<div class="flex items-center w-full md:w-2/3 border-r border-gray-200 p-2">
+<span class="material-icons text-gray-500 mr-2">search</span>
+<input class="w-full focus:outline-none text-gray-700" placeholder="Search by destination, activity, or attraction" type="text"/>
+</div>
+<div class="flex items-center w-full md:w-1/3 p-2 mt-2 md:mt-0">
+<span class="material-icons text-gray-500 mr-2">calendar_today</span>
+<input class="w-full focus:outline-none text-gray-700" placeholder="Select Date" type="text"/>
+</div>
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg w-full md:w-auto mt-4 md:mt-0 md:ml-4">
+                            SEARCH
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<style>
+  /* Glow Effect on Cards */
+  .tour-card {
+    transition: all 0.4s ease;
+    position: relative;
+  }
+
+  .tour-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background: linear-gradient(45deg, rgba(0, 204, 255, 0.5), rgba(255, 0, 204, 0.5));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+    filter: blur(15px);
+  }
+
+  .tour-card:hover::before {
+    opacity: 1;
+  }
+
+  .tour-card img {
+    transition: transform 0.5s ease;
+  }
+
+  .tour-card:hover img {
+    transform: scale(1.1);
+  }
+
+  /* Glitter Animation */
+  .glitter {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glitter::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(
+      60deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    transform: rotate(25deg);
+    animation: shine 6s infinite linear;
+    z-index: 1;
+  }
+
+  @keyframes shine {
+    0% { transform: translateX(-200%) rotate(25deg); }
+    50% { transform: translateX(200%) rotate(25deg); }
+    100% { transform: translateX(-200%) rotate(25deg); }
+  }
+</style>
+
+<section class="py-12 bg-white glitter">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">✨ Top-Rated Tours & Must-See Attractions ✨</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+
+      <!-- 1 Dubai City Tour -->
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl tour-card">
+        <img alt="Dubai City Tour" class="w-full h-48 object-cover" src="img2.jpg"/>
+        <div class="p-4 relative z-10 bg-white">
+          <h3 class="font-bold text-lg mb-2">Dubai City Tour</h3>
+          <p class="text-gray-600 text-sm">From <span class="font-bold text-black">$35.00</span></p>
+        </div>
+      </div>
+
+      <!-- 2 Desert Safari -->
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl tour-card">
+        <img alt="Desert Safari" class="w-full h-48 object-cover" src="img3.jpg"/>
+        <div class="p-4 relative z-10 bg-white">
+          <h3 class="font-bold text-lg mb-2">Desert Safari & BBQ</h3>
+          <p class="text-gray-600 text-sm">From <span class="font-bold text-black">$75.00</span></p>
+        </div>
+      </div>
+
+      <!-- 3 Burj Khalifa -->
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl tour-card">
+        <img alt="Burj Khalifa" class="w-full h-48 object-cover" src="img4.jpg"/>
+        <div class="p-4 relative z-10 bg-white">
+          <h3 class="font-bold text-lg mb-2">Burj Khalifa</h3>
+          <p class="text-gray-600 text-sm">From <span class="font-bold text-black">$55.00</span></p>
+        </div>
+      </div>
+
+      <!-- 4 Dhow Cruise -->
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl tour-card">
+        <img alt="Dhow Cruise" class="w-full h-48 object-cover" src="img5.jpg"/>
+        <div class="p-4 relative z-10 bg-white">
+          <h3 class="font-bold text-lg mb-2">Dhow Cruise Dinner</h3>
+          <p class="text-gray-600 text-sm">From <span class="font-bold text-black">$45.00</span></p>
+        </div>
+      </div>
+
+      <!-- 5 Palm Jumeirah -->
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl tour-card">
+        <img alt="Palm Jumeirah" class="w-full h-48 object-cover" src="img6.jpg"/>
+        <div class="p-4 relative z-10 bg-white">
+          <h3 class="font-bold text-lg mb-2">Palm Jumeirah</h3>
+          <p class="text-gray-600 text-sm">From <span class="font-bold text-black">$60.00</span></p>
+        </div>
+      </div>
+
+      <!-- 6 Dubai Frame -->
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl tour-card">
+        <img alt="Dubai Frame" class="w-full h-48 object-cover" src="img7.jpg"/>
+        <div class="p-4 relative z-10 bg-white">
+          <h3 class="font-bold text-lg mb-2">Dubai Frame</h3>
+          <p class="text-gray-600 text-sm">From <span class="font-bold text-black">$25.00</span></p>
+        </div>
+      </div>
+
+      <!-- 7 Miracle Garden -->
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl tour-card">
+        <img alt="Dubai Miracle Garden" class="w-full h-48 object-cover" src="https://source.unsplash.com/400x300/?dubai,garden"/>
+        <div class="p-4 relative z-10 bg-white">
+          <h3 class="font-bold text-lg mb-2">Miracle Garden</h3>
+          <p class="text-gray-600 text-sm">From <span class="font-bold text-black">$20.00</span></p>
+        </div>
+      </div>
+
+      <!-- 8 Dubai Aquarium -->
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl tour-card">
+        <img alt="Dubai Aquarium" class="w-full h-48 object-cover" src="https://source.unsplash.com/400x300/?dubai,aquarium"/>
+        <div class="p-4 relative z-10 bg-white">
+          <h3 class="font-bold text-lg mb-2">Dubai Aquarium</h3>
+          <p class="text-gray-600 text-sm">From <span class="font-bold text-black">$40.00</span></p>
+        </div>
+      </div>
+
+      <!-- 9 Atlantis Waterpark -->
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl tour-card">
+        <img alt="Atlantis Waterpark" class="w-full h-48 object-cover" src="https://source.unsplash.com/400x300/?atlantis,dubai"/>
+        <div class="p-4 relative z-10 bg-white">
+          <h3 class="font-bold text-lg mb-2">Atlantis Waterpark</h3>
+          <p class="text-gray-600 text-sm">From <span class="font-bold text-black">$65.00</span></p>
+        </div>
+      </div>
+
+      <!-- 10 Global Village -->
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl tour-card">
+        <img alt="Global Village" class="w-full h-48 object-cover" src="https://source.unsplash.com/400x300/?global,village,dubai"/>
+        <div class="p-4 relative z-10 bg-white">
+          <h3 class="font-bold text-lg mb-2">Global Village</h3>
+          <p class="text-gray-600 text-sm">From <span class="font-bold text-black">$30.00</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-8">
+      <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors shadow-md hover:shadow-2xl" href="#">VIEW ALL</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-12 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-8">Why Choose Dubaidrifters.com?</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+<div class="flex flex-col items-center">
+<div class="bg-blue-100 rounded-full p-4 mb-4">
+<span class="material-icons text-3xl text-blue-600">verified_user</span>
+</div>
+<h3 class="font-semibold text-lg mb-2">Best Price Guarantee</h3>
+<p class="text-gray-600 text-sm">We offer competitive prices on all our tours and services.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="bg-blue-100 rounded-full p-4 mb-4">
+<span class="material-icons text-3xl text-blue-600">support_agent</span>
+</div>
+<h3 class="font-semibold text-lg mb-2">24/7 Customer Support</h3>
+<p class="text-gray-600 text-sm">Our team is available round the clock to assist you.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="bg-blue-100 rounded-full p-4 mb-4">
+<span class="material-icons text-3xl text-blue-600">card_giftcard</span>
+</div>
+<h3 class="font-semibold text-lg mb-2">Customized Packages</h3>
+<p class="text-gray-600 text-sm">We can tailor-make packages to suit your preferences.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="bg-blue-100 rounded-full p-4 mb-4">
+<span class="material-icons text-3xl text-blue-600">thumb_up</span>
+</div>
+<h3 class="font-semibold text-lg mb-2">Easy Booking</h3>
+<p class="text-gray-600 text-sm">A hassle-free booking experience with flexible options.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-800 text-white">
+<div class="container mx-auto px-4 py-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h4 class="font-bold text-lg mb-4">About Dubaidrifters.com</h4>
+<p class="text-sm text-gray-400">Your trusted partner for exploring the wonders of Dubai. We provide a wide range of tours, activities, and travel services to make your trip memorable.</p>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-4">Support</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="text-gray-400 hover:text-white" href="contact.html">Contact Us</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#">FAQs</a></li>
+<li><a class="text-gray-400 hover:text-white" href="termsandconditions.html">Terms &amp; Conditions</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-4">Follow Us</h4>
+<div class="flex space-x-4">
+<a class="text-gray-400 hover:text-white" href="#"><span class="material-icons">facebook</span></a>
+<a class="text-gray-400 hover:text-white" href="#"><span class="material-icons">camera_alt</span></a>
+<a class="text-gray-400 hover:text-white" href="#"><span class="material-icons">play_circle_filled</span></a>
+</div>
+<h4 class="font-bold text-lg mt-6 mb-4">Payment Methods</h4>
+<img alt="Payment methods" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3e0SXWv0cXuymZLmx_Nz-0hIouO3HVcZYKqgMC7pS6beArasOJWEY9FILcZemrjsGWG2rkfgQftYzFSn1M-O1BtO9KaMvotxNX2K6UoRmuB4C0MTbhXJkTO39X23CEurkBogxw-ACNXnG3Vcm0UMskeYDgnPKOiV60BkyRJYRObPAQmLuxqPUTIdWkf5wb27txFJHOpEzTdinQK-wWOvcZ27yMpRmjLG03glrUwkBTtqM1ifomGpP6mTI9W5x-bvBa_zVRqbEZiNq"/>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-4">Newsletter</h4>
+<p class="text-sm text-gray-400 mb-4">Subscribe to our newsletter for exclusive offers and updates.</p>
+<form class="flex">
+<input class="w-full rounded-l-md p-2 text-gray-800 focus:outline-none" placeholder="Your email" type="email"/>
+<button class="bg-blue-600 hover:bg-blue-700 text-white px-4 rounded-r-md" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500">
+<p>© 2024 Dubaidrifters.com. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Mobile menu toggle
+  const menuBtn = document.querySelector("header .md\\:hidden button");
+  const nav = document.querySelector("header nav");
+  if(menuBtn && nav){
+    menuBtn.addEventListener("click", () => {
+      nav.classList.toggle("hidden");
+    });
+  }
+
+  // Search button
+  const searchBtn = document.querySelector("main button");
+  const searchInput = document.querySelector("main input[type='text']");
+  if(searchBtn && searchInput){
+    searchBtn.addEventListener("click", () => {
+      if(searchInput.value.trim() !== ""){
+        alert("🔍 Searching for: " + searchInput.value);
+      } else {
+        alert("⚠️ Please enter a search term.");
+      }
+    });
+  }
+
+  // Newsletter
+  const newsletterForm = document.querySelector("footer form");
+  const newsletterEmail = document.querySelector("footer input[type='email']");
+  if(newsletterForm && newsletterEmail){
+    newsletterForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if(newsletterEmail.value.includes("@")){
+        alert("✅ Thank you for subscribing!");
+        newsletterEmail.value = "";
+      } else {
+        alert("❌ Please enter a valid email.");
+      }
+    });
+  }
+
+  // Currency dropdown
+  const currencyBtn = document.querySelector("#currencyBtn");
+  const currencyMenu = document.querySelector("#currencyDropdown");
+  if(currencyBtn && currencyMenu){
+    currencyBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      currencyMenu.classList.toggle("hidden");
+      languageMenu.classList.add("hidden"); // close language if open
+    });
+    currencyMenu.querySelectorAll("li").forEach(item => {
+      item.addEventListener("click", () => {
+        document.querySelector("#currencyText").textContent = item.textContent;
+        currencyMenu.classList.add("hidden");
+      });
+    });
+  }
+
+  // Language dropdown
+  const languageBtn = document.querySelector("#languageBtn");
+  const languageMenu = document.querySelector("#languageDropdown");
+  if(languageBtn && languageMenu){
+    languageBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      languageMenu.classList.toggle("hidden");
+      currencyMenu.classList.add("hidden"); // close currency if open
+    });
+    languageMenu.querySelectorAll("li").forEach(item => {
+      item.addEventListener("click", () => {
+        document.querySelector("#langText").textContent = item.textContent;
+        languageMenu.classList.add("hidden");
+      });
+    });
+  }
+
+  // Close dropdowns on outside click
+  document.addEventListener("click", () => {
+    if(currencyMenu) currencyMenu.classList.add("hidden");
+    if(languageMenu) languageMenu.classList.add("hidden");
+  });
+});
+</script>
+
+
+</body>
+</html>
